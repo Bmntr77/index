@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Roboto:wght@100&display=swap');
+
+/*Semua Halaman HTML*/
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #363534;
+}
+
+/*Tulisan Tentang,Socials, dan Support*/
+li, a, button {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+/*Style Header*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10%;
+    
+}
+/*Style Logo*/
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_link li a {
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+}
+.nav_link li a:hover {
+    color: skyblue;
+}
+
+/*Tombol Subscribe*/
+.Tombolsubs{
+    padding: 1px 3px;
+    background-color: rgb(169, 25, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+.Tombolsubs:hover {
+    background-color: rgba(90, 11, 11, 0.8);
+}
+
+/*Tulisan Student, Gamer, ContentCreator*/
+.pertengahan {
+    text-align: center;
+    font-family:'Oswald', sans-serif;
+    font-size: 30px;
+    margin-top: 200px;
+    color: antiquewhite;
+}
+
+/*Perkenalan yang ada dibawah web*/
+.perkenalan {
+    text-align: center;
+    font-family:'Oswald', sans-serif;
+    font-size: 30px;
+    color: antiquewhite;
+    margin-top: 600px;
+    margin-bottom: 250px;
+}
+
+/*Tombol Learn more*/
+.tombollearn {
+    text-align: center;
+}
+
+
+.tombollearnmore {
+    padding: 9px 25px;
+    text-align: center;
+    margin-top: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(1, 100, 139);
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+.tombollearnmore:hover {
+    background-color: rgb(2, 52, 71);                                                                                                                                       
+}
+
+/*Tombol Video di Bawah Perkenalan*/
+.TombolVideo {
+    background-color: red;
+    border-radius: 15px;
+    padding: 0px 10px;
+    font-size: 35px;
+    transition: 0.2s ease all;
+}
+.TombolVideo:hover {
+    background-color: rgb(85, 12, 12);
+}
+
+/*Footer yang ada Tulisan Copyrightnya*/
+footer {
+    color: antiquewhite;
+    text-align: center;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+}
+
+/*HTML Scroll agar scrollnya smooth*/
+html {
+    scroll-behavior: smooth !important;
+}
