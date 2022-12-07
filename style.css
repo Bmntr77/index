@@ -1,30 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Roboto:wght@100&display=swap');
 
+@font-face {
+    font-family: BohemianSoul;
+    src: url(font/Bohemian\ Soul.otf);
+}
+
+@font-face {
+    font-family: Andorra la Vella;
+    src: url(font/AndorralaVella.ttf);
+}
+
+@font-face {
+    font-family: KGHappy;
+    src: url(font/KGHAPPY.ttf);
+}
+
+@font-face {
+    font-family: KidsMagazine;
+    src: url(font/Kids\ Magazine.ttf);
+}
+
+@font-face {
+    font-family: ModernSansLight;
+    src: url(font/ModernSans-Light.otf);
+}
+
 /*Semua Halaman HTML*/
 *  {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #363534;
 }
+
+/* ================================= STYLE HOME ================================= */
 
 /*Tulisan Tentang,Socials, dan Support*/
 li, a, button {
-    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 25px;
     color: aliceblue;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
+.nav_link {
+    font-family: Andorra la Vella;
+}
+
 /*Style Header*/
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 5px 10%;
-    
+    background-color: #0f1b3b;
 }
+
+main {
+    background-image: url(img/background1.jpg);
+    background-position: 100% fixed;
+}
+
 /*Style Logo*/
 .logo {
     cursor: pointer;
@@ -44,7 +78,7 @@ header {
 
 /*Tombol Subscribe*/
 .Tombolsubs{
-    padding: 1px 3px;
+    padding: 1px 8px;
     background-color: rgb(169, 25, 0);
     border-radius: 10px;
     cursor: pointer;
@@ -55,22 +89,67 @@ header {
 }
 
 /*Tulisan Student, Gamer, ContentCreator*/
-.pertengahan {
+.pertengahanhome {
     text-align: center;
-    font-family:'Oswald', sans-serif;
-    font-size: 30px;
-    margin-top: 200px;
+    font-family: Andorra la Vella;
+    padding-top: 200px;
+    color: antiquewhite;  
+}
+
+.student {
+    animation: student;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     color: antiquewhite;
+    font-size: 0px;
+}
+
+@keyframes student {
+    from {opacity: 0%; font-size: 0px;}
+    to {opacity: 100%; font-size: 80px;}
+}
+
+.gamer {
+    color: #d6c019;
+    animation: gamer;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    font-size: 0px;
+}
+
+@keyframes gamer {
+    from {opacity: 0%; font-size: 0px;}
+    to {opacity: 100%; font-size: 80px;}
+}
+
+.contentcreator {
+    color: #CF0A0A;
+    animation: contentcreator;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    font-size: 0px;
+}
+
+@keyframes contentcreator {
+    from {opacity: 0%; font-size: 0px;}
+    to {opacity: 100%; font-size: 80px;}
 }
 
 /*Perkenalan yang ada dibawah web*/
+#mid {
+    font-family: Cooper Black;
+    margin-bottom: 15px;
+}
+
 .perkenalan {
     text-align: center;
-    font-family:'Oswald', sans-serif;
+    font-family: Modern Sans;
+    font-weight: bolder;
     font-size: 30px;
     color: antiquewhite;
-    margin-top: 600px;
-    margin-bottom: 250px;
+    margin-top: 650px;
 }
 
 /*Tombol Learn more*/
@@ -78,44 +157,1480 @@ header {
     text-align: center;
 }
 
-
 .tombollearnmore {
-    padding: 9px 25px;
+    padding: 10px 20px;
     text-align: center;
     margin-top: 25px;
     border: none;
     border-radius: 15px;
-    background-color: rgb(1, 100, 139);
+    background-color: #d6c019;
     cursor: pointer;
     transition: 0.2s ease all;
+    font-size: 25px;
+    font-family: Andorra la Vella;
 }
+
 .tombollearnmore:hover {
-    background-color: rgb(2, 52, 71);                                                                                                                                       
+    background-color: rgb(126, 120, 3);
+    font-size: 30px;           
 }
 
 /*Tombol Video di Bawah Perkenalan*/
+.tombolbawah{
+    text-align: center;
+    margin-bottom: 300px;
+}
 .TombolVideo {
-    background-color: red;
+    background-color: #d6c019;
     border-radius: 15px;
-    padding: 0px 10px;
-    font-size: 35px;
+    padding: 8px 13px;
+    font-size: 25px;
     transition: 0.2s ease all;
+    font-family: Andorra la Vella;
 }
 .TombolVideo:hover {
-    background-color: rgb(85, 12, 12);
+    background-color: rgb(126, 120, 3);
+    font-size: 30px;
 }
+
+/*Tombol Project di Bawah Perkenalan*/
+.TombolProject {
+    background-color: #d6c019;
+    border-radius: 15px;
+    padding: 8px 13px;
+    font-size: 25px;
+    transition: 0.2s ease all;
+    font-family: Andorra la Vella;
+}
+.TombolProject:hover {
+    background-color: rgb(126, 120, 3);
+    font-size: 30px;
+}
+
+/*TombolProfile di Bawah Perkenalan*/
+.TombolProfile {
+    background-color: #d6c019;
+    border-radius: 15px;
+    padding: 8px 13px;
+    font-size: 25px;
+    transition: 0.2s ease all;
+    font-family: Andorra la Vella;
+}
+.TombolProfile:hover {
+    background-color: rgb(126, 120, 3);
+    font-size: 30px;
+}
+
+/*TombolKontak di Bawah Perkenalan*/
+.TombolKontak {
+    background-color: #d6c019;
+    border-radius: 15px;
+    padding: 8px 13px;
+    font-size: 25px;
+    transition: 0.2s ease all;
+    font-family: Andorra la Vella;
+}
+.TombolKontak:hover {
+    background-color: rgb(126, 120, 3);
+    font-size: 30px;
+}
+
+/* ================================= STYLE VIDEOS ================================= */
+.judulvideo {
+    font-size: 0px;
+    animation: animasijudul;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasijudul {
+    from {font-size: 0px;}
+    to {font-size: 80px;}
+}
+
+.pertengahanvideo {
+    text-align: center;
+    font-family: Andorra la Vella;
+    font-size: 0px;
+    padding-top: 200px;
+    color: antiquewhite;
+    animation: animasidesk;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasidesk {
+    from {font-size: 0px;}
+    to {font-size: 30px;}
+}
+/*Style Thumbnail 1*/
+.Thumbnail1 {
+    width: 0px;
+    height: auto;
+    margin-top: 100px;
+    animation: animasith1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasith1 {
+    from {width: 0px; height: auto;}
+    to {width: 400px; height: auto;}
+}
+
+.Thumbnail1:hover {
+    filter: opacity(70%);
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+}
+
+/*Style Thumbnail 2*/
+.Thumbnail2 {
+    width: 0px;
+    height: auto;
+    margin-top: 100px;
+    animation: animasith2;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasith2 {
+    from {width: 0px; height: auto;}
+    to {width: 400px; height: auto;}
+}
+
+.Thumbnail2:hover {
+    filter: opacity(70%);
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+}
+
+/*Style Thumbnail 3*/
+.Thumbnail3 {
+    width: 0px;
+    height: auto;
+    margin-top: 100px;  
+    animation: animasith3;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasith3 {
+    from {width: 0px; height: auto;}
+    to {width: 400px; height: auto;}
+}
+
+.Thumbnail3:hover {
+    filter: opacity(70%);
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+}
+/*Style semua Thumbnail*/
+.Videos {
+    position: relative;
+    text-align: center;  
+}
+
+/*Tulisan Dibawah Thumbnail*/
+.link{
+    font-size: 0px;
+    font-family: Modern Sans;
+    font-weight: bolder;
+    animation: animasilink;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasilink {
+    from {font-size: 0px;}
+    to {font-size: 25px;}
+}
+
+.link:hover {
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+    color: aqua;
+}
+
+.DeskripsiBawah {
+    text-align: center;
+    font-family: Andorra la Vella;
+    font-size: 0px;
+    margin-top: 100px;
+    padding-bottom: 300px;
+    color: antiquewhite;
+    animation: animasitulisan;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasitulisan {
+    from {font-size: 0px;}
+    to {font-size: 30px;}
+}
+
+/* ================================= STYLE PROFILE ================================= */
+
+/* Tulisan Profile */
+.pertengahanprofile {
+    text-align: center;
+    font-family: Andorra la Vella;
+    color: antiquewhite;
+    font-size: 30px;
+    padding-top: 100px;
+    animation: pertengahanprofile;
+    animation-duration: 1s;
+}
+
+@keyframes pertengahanprofile {
+    from {font-size: 0px;}
+    to {font-size: 30px;}
+}
+
+/* Image Profile Picture */
+.profilepict {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    animation: pp;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes pp {
+    0% {width: 0px;}
+    50% {width: 200px;}
+    100% {width: 150px;  transform: rotate(360deg);}
+}
+
+/* Tulisan Bimantara Giri */
+#namavideo {
+    font-family: Andorra la Vella;
+    color: #e4cc1c;
+    font-size: 0px;
+    opacity: 0%;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    animation: namaprofile;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes namaprofile {
+    0% {opacity: 0%;}
+    50% {opacity: 100%; font-size: 40px;}
+    75% {font-size: 45px; opacity: 100%;}
+    100% {font-size: 40px; opacity: 100%;}
+}
+
+/* Judul Deskripsi Profile */
+.juduldeskripsi {
+    text-align: center;
+}
+
+/* Deksripsi Profile */
+.deskripsi {
+    font-family: Cooper;
+    font-size: 20px;
+    opacity: 0%;
+    font-weight: lighter;
+    color: antiquewhite;
+    text-align: center;
+    animation: deskripsiprofile;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes deskripsiprofile {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+p {
+    padding-bottom: 5px;
+}
+
+/* Logo logo social media */
+.socials {
+    text-align: center;
+    word-spacing: 100px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.socials a :hover {
+    transition: 0.3s ease all;
+    width: 60px;
+}
+
+.instagram {
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s ease all;
+    animation: instagram;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes instagram {
+    from {width: 0px;}
+    to {width: 45px;}
+}
+
+.youtube {
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s ease all;
+    animation: youtube;
+    animation-delay: 2.8s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes youtube{
+    from {width: 0px;}
+    to {width: 45px;}
+}
+
+.steam {
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s ease all;
+    animation: steam;
+    animation-delay: 3.1s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes steam {
+    from {width: 0px;}
+    to {width: 45px;}
+}
+
+.twitter {
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s ease all;
+    animation: twitter;
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes twitter {
+    from {width: 0px;}
+    to {width: 45px;}
+}
+
+/* Tulisan Riwayat Pendidikan */
+.riwayat {
+    text-align: center;
+    font-family: Andorra la Vella;
+    color: antiquewhite;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.riwayatnskill {
+    opacity: 0%;
+    animation: riwayat;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes riwayat {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+
+/* Table */
+table {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table th {
+    font-family: Andorra la Vella;
+    color: #e4cc1c;
+    font-size: 40px;
+}
+
+table td {
+    font-family: Cooper;
+    color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Judul Kemampuan */
+.kemampuan {
+    text-align: center;
+    font-family: Andorra la Vella;
+    color: antiquewhite;
+    font-size: 50px;
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+
+/* List Kemampuan */
+.keahlian li {
+    text-align: center;
+    font-family: Cooper;
+    color: #e4cc1c;
+    font-size: 40px;
+}
+
+.areakeahlian {
+    padding-bottom: 100px;
+}
+
+/* icon dalam list keahlian */
+.gambarhtml {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.gambarcss {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.gambarpremiere {
+    width: 32px;
+    margin-left: 10px;
+}
+
+.gambarphotoshop {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.gambarpc {
+    width: 33px;
+    margin-left: 10px;
+}
+
+/* ==================================== STYLE PROJECT ========================================== */
+
+/* TULISAN MY RECENT PROJECT */
+.pertengahanproject {
+    text-align: center;
+    font-family: Andorra la Vella;
+    color: antiquewhite;
+    font-size: 30px;
+    padding-top: 100px;
+    animation: pertengahanproject;
+    animation-duration: 1s;
+}
+
+/* BLOG PROJECT 1 */
+.card1 {
+    text-align: center;
+    margin-top: 75px;
+    width: 50%;
+    float: left;
+}
+
+/* JUDUL PROJECT 1 */
+.isicard1 h2 {
+    font-family: BohemianSoul;
+    font-size: 40px;
+    color: #e4cc1c;
+    margin-bottom: 10px;
+}
+
+/* GAMBAR PROJECT 1 */
+.imgcard1 {
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0px 10px 15px 0px antiquewhite;
+}
+
+/* JUDUL DIBAWAH PROJECT 1 */
+.judul-desk-card1 {
+    font-family: BohemianSoul;
+    color: #e4cc1c;
+}
+
+/* DESKRIPSI JUDUL PROJECT 1 */
+.desk-card1 {
+    color: antiquewhite;
+    font-family: Cooper;
+    margin-bottom: 40px;
+}
+
+/* KESELURUHAN JUDUL DAN DESKRIPSI PROJECT 1 */
+.deskcard1 {
+    margin-top: 20px;
+}
+
+.deskjudul1 {
+    color: antiquewhite;
+    font-family: Cooper;
+}
+
+/* BLOG PROJECT 2 */
+.card2 {
+    text-align: center;
+    margin-top: 75px;
+    width: 50%;
+    float: left;
+}
+
+/* JUDUL PROJECT 1 */
+.isicard2 h2 {
+    font-family: BohemianSoul;
+    font-size: 40px;
+    color: #e4cc1c;
+    margin-bottom: 10px;
+}
+
+/* GAMBAR PROJECT 1 */
+.imgcard2 {
+    width: 500px;
+    height: 281px;
+    margin-top: 20px;
+    box-shadow: 0px 10px 15px 0px antiquewhite;
+}
+
+/* JUDUL DIBAWAH PROJECT 1 */
+.judul-desk-card2 {
+    font-family: BohemianSoul;
+    color: #e4cc1c;
+}
+
+/* DESKRIPSI JUDUL PROJECT 1 */
+.desk-card2 {
+    color: antiquewhite;
+    font-family: Cooper;
+    margin-bottom: 40px;
+}
+
+/* KESELURUHAN JUDUL DAN DESKRIPSI PROJECT 1 */
+.deskcard2 {
+    margin-top: 20px;
+}
+
+.deskjudul2 {
+    color: antiquewhite;
+    font-family: Cooper;
+}
+
+/* ======================================================= STYLE KONTAK =========================================== */
+
+.judul-kontak {
+    font-family: KidsMagazine;
+    font-size: 40px;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 60px;
+    -webkit-text-stroke: 2px #e4cc1c;
+}
+
+.deskripsi-kontak {
+    font-family: Cooper;
+    font-size: 40px;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.deskripsi-kontak2 {
+    font-family: ModernSansLight;
+    font-size: 25px;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    font-family: Andorra la Vella;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  button[type=submit] {
+    color: antiquewhite;
+    background-color: #45a049;
+    border: none;
+    border-radius: 12px;
+    padding: 2px 5px;
+    transition: all 0.2s ease;
+    font-family: Andorra la Vella;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  button[type=submit]:hover {
+    background-color: #307a34;
+    transition: all 0.2s ease;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .containerkanan {
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    float: right;
+    margin-right: 150px;
+  }
+
+  .backgroundkontak {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #270841;
+  }
+
+  .containerkiri {
+    margin-top: 100px;
+    margin-left: 500px;
+    border-radius: 5px;
+    font-family: Andorra la Vella;
+    background-color:rgb(12, 104, 146);
+    box-shadow:5px 5px 5px rgb(15, 137, 218);
+    padding: 20px;
+    width: 25%;
+    float: left;
+    resize: both;
+    position: absolute;
+  }
+  
+
+
+
+  @media only screen and (max-width : 1800px) {
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+    font-family: Andorra la Vella;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  button[type=submit] {
+    color: antiquewhite;
+    background-color: #45a049;
+    border: none;
+    border-radius: 12px;
+    padding: 2px 5px;
+    transition: all 0.2s ease;
+    font-family: Andorra la Vella;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  button[type=submit]:hover {
+    background-color: #307a34;
+    transition: all 0.2s ease;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .containerkanan {
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    float: right;
+    margin-right: 150px;
+  }
+
+  .backgroundkontak {
+    width: 900px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #270841;
+  }
+
+  .containerkiri {
+    margin-top: 100px;
+    margin-left: 500px;
+    border-radius: 5px;
+    font-family: Andorra la Vella;
+    background-color:rgb(12, 104, 146);
+    box-shadow:5px 5px 5px rgb(15, 137, 218);
+    padding: 20px;
+    width: 25%;
+    float: left;
+    resize: both;
+    position: absolute;
+  }
+  }
+
+  @media only screen and (max-width : 1300px) {
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+    font-family: Andorra la Vella;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  button[type=submit] {
+    color: antiquewhite;
+    background-color: #45a049;
+    border: none;
+    border-radius: 12px;
+    padding: 2px 5px;
+    transition: all 0.2s ease;
+    font-family: Andorra la Vella;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  button[type=submit]:hover {
+    background-color: #307a34;
+    transition: all 0.2s ease;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .containerkanan {
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    margin-right: auto;
+    margin-right: auto;
+  }
+
+  .backgroundkontak {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #270841;
+  }
+
+  .containerkiri {
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: Andorra la Vella;
+    background-color:rgb(12, 104, 146);
+    box-shadow:5px 5px 5px rgb(15, 137, 218);
+    padding: 20px;
+    resize: both;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================= STYLE UNDER CONSTRUCTION ================================= */
+
+/* Gambar Under Construction */
+.underconstruction {
+    width: 300px;
+    height: auto;
+    margin-top: 60px;
+    animation-name: animasifoto;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.UC {
+    text-align: center;
+    box-sizing: border-box;
+    height: 450px;
+    color: aliceblue;
+}
+
+@keyframes animasifoto {
+    0%   {margin-left: 0px; margin-top: 60px;}
+    20%  {margin-left: 200px; margin-top: 60px;}
+    40%  {margin-left: 200px; margin-top: 200px;}
+    60%  {margin-left: -200px; margin-top:200px;}
+    80%  {margin-left: -200px; margin-top:60px;}
+    100% {margin-left: 0px; margin-top: 60px;}
+}
+
+/* Judul Under Construction */
+.judulUC {
+    text-align: center;
+    font-family: Andorra la Vella;
+    color: antiquewhite;
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+/* Tombol Balik Home */
+.TombolBalik {
+    background-color: #d6c019;
+    border-radius: 15px;
+    padding: 8px 13px;
+    font-size: 25px;
+    transition: 0.2s ease all;
+    font-family: Andorra la Vella;
+}
+.TombolBalik:hover {
+    background-color: rgb(126, 120, 3);
+    font-size: 30px;
+}
+
+.tombolbalik {
+    text-align: center;
+    padding-bottom: 10%;
+    margin-top: 100px;
+}
+
+/* ========================================= FOOTER ====================================== */
 
 /*Footer yang ada Tulisan Copyrightnya*/
 footer {
     color: antiquewhite;
     text-align: center;
-    background-attachment: scroll;
-    background-position: 0% 0%;
     position: fixed;
     bottom: 0pt;
+    background-image: url(img/background1.jpg);
 }
 
 /*HTML Scroll agar scrollnya smooth*/
 html {
     scroll-behavior: smooth !important;
+    background-image: url(img/background1.jpg);
 }
+
+@media only screen and (max-width: 1010px) {
+    /* For mobile phones: */
+    .perkenalan {
+        text-align: center;
+        font-family: Modern Sans;
+        font-weight: bolder;
+        font-size: 20px;
+        color: antiquewhite;
+        margin-top: 650px;
+    }
+
+    li, a, button {
+        font-weight: 500;
+        font-size: 20px;
+        color: aliceblue;
+        text-decoration: none; 
+    }
+
+    .TombolVideo {
+        background-color: #d6c019;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 15px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+
+    .TombolVideo:hover {
+        background-color: #d6c019;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 18px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+    
+    .TombolProject {
+        background-color: #d6c019;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 15px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+    
+    .TombolProject:hover {
+        background-color: #d6c019;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 18px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+
+    .TombolProfile {
+        background-color: #d6c019;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 15px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+
+    .TombolProfile:hover {
+        background-color: #d6c019;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 18px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+    
+    .TombolKontak {
+        background-color: #d6c019;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 15px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+
+    .TombolKontak:hover {
+        background-color: #d6c019;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 18px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+
+    .student {
+        animation: student;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        color: antiquewhite;
+        font-size: 0px;
+    }
+    
+    @keyframes student {
+        from {opacity: 0%; font-size: 0px;}
+        to {opacity: 100%; font-size: 45px;}
+    }
+    
+    .gamer {
+        color: #d6c019;
+        animation: gamer;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        font-size: 0px;
+    }
+    
+    @keyframes gamer {
+        from {opacity: 0%; font-size: 0px;}
+        to {opacity: 100%; font-size: 45px;}
+    }
+    
+    .contentcreator {
+        color: #CF0A0A;
+        animation: contentcreator;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        font-size: 0px;
+    }
+    
+    @keyframes contentcreator {
+        from {opacity: 0%; font-size: 0px;}
+        to {opacity: 100%; font-size: 45px;}
+    }
+
+    .tombollearnmore {
+        padding: 10px 20px;
+        text-align: center;
+        margin-top: 25px;
+        border: none;
+        border-radius: 15px;
+        background-color: #d6c019;
+        cursor: pointer;
+        transition: 0.2s ease all;
+        font-size: 15px;
+        font-family: Andorra la Vella;
+    }
+
+    .tombollearnmore:hover {
+        background-color: rgb(126, 120, 3);
+        font-size: 20px;           
+    }
+
+
+
+
+
+    .judulvideo {
+        font-size: 0px;
+        animation: animasijudul;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+    }
+    
+    @keyframes animasijudul {
+        from {font-size: 0px;}
+        to {font-size: 50px;}
+    }
+    
+    .pertengahanvideo {
+        text-align: center;
+        font-family: Andorra la Vella;
+        font-size: 0px;
+        padding-top: 200px;
+        color: antiquewhite;
+        animation: animasidesk;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+    }
+    
+    @keyframes animasidesk {
+        from {font-size: 0px;}
+        to {font-size: 20px;}
+    }
+
+    /*Style Thumbnail 1*/
+    .Thumbnail1 {
+    width: 0px;
+    height: auto;
+    margin-top: 100px;
+    animation: animasith1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasith1 {
+    from {width: 0px; height: auto;}
+    to {width: 300px; height: auto;}
+}
+
+.Thumbnail1:hover {
+    filter: opacity(70%);
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+}
+
+/*Style Thumbnail 2*/
+.Thumbnail2 {
+    width: 0px;
+    height: auto;
+    margin-top: 100px;
+    animation: animasith2;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasith2 {
+    from {width: 0px; height: auto;}
+    to {width: 300px; height: auto;}
+}
+
+.Thumbnail2:hover {
+    filter: opacity(70%);
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+}
+
+/*Style Thumbnail 3*/
+.Thumbnail3 {
+    width: 0px;
+    height: auto;
+    margin-top: 100px;  
+    animation: animasith3;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasith3 {
+    from {width: 0px; height: auto;}
+    to {width: 300px; height: auto;}
+}
+
+.Thumbnail3:hover {
+    filter: opacity(70%);
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+}
+
+/*Tulisan Dibawah Thumbnail*/
+.link{
+    font-size: 0px;
+    font-family: Modern Sans;
+    font-weight: bolder;
+    animation: animasilink;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasilink {
+    from {font-size: 0px;}
+    to {font-size: 20px;}
+}
+
+.link:hover {
+    transition: all 0.8 ease 0s;
+    transition: 0.5s ease all;
+    color: aqua;
+}
+
+.DeskripsiBawah {
+    text-align: center;
+    font-family: Andorra la Vella;
+    font-size: 0px;
+    margin-top: 100px;
+    padding-bottom: 300px;
+    color: antiquewhite;
+    animation: animasitulisan;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes animasitulisan {
+    from {font-size: 0px;}
+    to {font-size: 20px;}
+}
+
+
+
+/* Tulisan Profile */
+.pertengahanprofile {
+    text-align: center;
+    font-family: Andorra la Vella;
+    color: antiquewhite;
+    font-size: 0px;
+    padding-top: 100px;
+    animation: pertengahanprofile;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pertengahanprofile {
+    from {font-size: 0px;}
+    to {font-size: 20px;}
+}
+
+@keyframes pp {
+    0% {width: 0px;}
+    50% {width: 150px;}
+    100% {width: 100px;  transform: rotate(360deg);}
+}
+
+@keyframes namaprofile {
+    0% {opacity: 0%;}
+    50% {opacity: 100%; font-size: 30px;}
+    75% {opacity: 100%; font-size: 35px;} 
+    100% {opacity: 100%; font-size: 30px;}
+}
+
+/* Deksripsi Profile */
+.deskripsi {
+    font-family: Cooper;
+    font-size: 15px;
+    opacity: 0%;
+    font-weight: lighter;
+    color: antiquewhite;
+    text-align: center;
+    animation: deskripsiprofile;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes deskripsiprofile {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+p {
+    padding-bottom: 5px;
+}
+
+/* Logo logo social media */
+.socials {
+    text-align: center;
+    word-spacing: 100px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.socials a :hover {
+    transition: 0.3s ease all;
+    width: 60px;
+}
+
+.instagram {
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s ease all;
+    animation: instagram;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes instagram {
+    from {width: 0px;}
+    to {width: 30px;}
+}
+
+.youtube {
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s ease all;
+    animation: youtube;
+    animation-delay: 2.8s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes youtube{
+    from {width: 0px;}
+    to {width: 30px;}
+}
+
+.steam {
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s ease all;
+    animation: steam;
+    animation-delay: 3.1s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes steam {
+    from {width: 0px;}
+    to {width: 30px;}
+}
+
+.twitter {
+    width: 0px;
+    height: auto;
+    padding-bottom: 20px;
+    transition: 0.3s ease all;
+    animation: twitter;
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes twitter {
+    from {width: 0px;}
+    to {width: 30px;}
+}
+
+/* Tulisan Riwayat Pendidikan */
+.riwayat {
+    text-align: center;
+    font-family: Andorra la Vella;
+    color: antiquewhite;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.riwayatnskill {
+    opacity: 0%;
+    animation: riwayat;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+
+@keyframes riwayat {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+
+/* Table */
+table {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table th {
+    font-family: Andorra la Vella;
+    color: #e4cc1c;
+    font-size: 30px;
+}
+
+table td {
+    font-family: Cooper;
+    color: antiquewhite;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Judul Kemampuan */
+.kemampuan {
+    text-align: center;
+    font-family: Andorra la Vella;
+    color: antiquewhite;
+    font-size: 35px;
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+
+/* List Kemampuan */
+.keahlian li {
+    text-align: center;
+    font-family: Cooper;
+    color: #e4cc1c;
+    font-size: 30px;
+}
+
+.areakeahlian {
+    padding-bottom: 100px;
+}
+
+/* icon dalam list keahlian */
+.gambarhtml {
+    width: 23px;
+    margin-left: 10px;
+}
+
+.gambarcss {
+    width: 23px;
+    margin-right: 10px;
+}
+
+.gambarpremiere {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.gambarphotoshop {
+    width: 23px;
+    margin-right: 10px;
+}
+
+.gambarpc {
+    width: 26px;
+    margin-left: 10px;
+}
+  }
+
+
+
+  @media only screen and (max-width : 475px) {
+    .TombolVideo {
+        background-color: #d6c019;
+        border-radius: 15px;
+        padding: 8px 10px;
+        font-size: 13px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+    
+    .TombolProject {
+        background-color: #d6c019;
+        border-radius: 15px;
+        padding: 8px 10px;
+        font-size: 13px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+    
+    .TombolProfile {
+        background-color: #d6c019;
+        border-radius: 15px;
+        padding: 8px 10px;
+        font-size: 13px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+    
+    .TombolKontak {
+        background-color: #d6c019;
+        border-radius: 15px;
+        padding: 8px 10px;
+        font-size: 13px;
+        transition: 0.2s ease all;
+        font-family: Andorra la Vella;
+    }
+  }
